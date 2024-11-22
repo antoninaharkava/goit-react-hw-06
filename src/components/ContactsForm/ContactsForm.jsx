@@ -22,15 +22,15 @@ const ContactsForm = () => {
 
   return (
     <form className={s.form} onSubmit={handleSubmit}>
-      <label>
+      <label className={s.label}>
         Name
         <input type="text" value={name} onChange={e => setName(e.target.value)} />
       </label>
-      <label>
+      <label className={s.label}>
         Number
         <input type="tel" value={number} onChange={e => setNumber(e.target.value)} />
       </label>
-      <button type="submit">Add contact</button>
+      <button className={s.btnAddC} type="submit">Add contact</button>
     </form>
   );
 };
